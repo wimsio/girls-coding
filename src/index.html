@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cardano 5 Years Anniversary Race</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="width:100%;text-align:center;margin:top:5px;position:absolute;background:#000;">
+    <div style="background-image:url('./images/bg.jpg');background-size 100% auto;">
+	<span style="font-weight:bold;color:#fff;">Cardano Happy 5 years Anniversary!</span><br>
+	<span style="font-weight:bold;color:#fff;">
+		<select id="list" class="kmBoard" onchange="selectList(this)" style="cursor:pointer;">
+			<option value="walletList">Wallets</option>
+			<option value="hardForksList">Hard Forks</option>
+			<option value="devToolsList">Dev Tools</option>
+			<option value="shellyList">Shelly Upgrade</option>
+			<option value="byronList">Byron Upgrade</option>			
+			<option value="goguenList">Goguen Upgrade</option>
+			<option value="bashoList">Basho Upgrade</option>
+			<option value="voltaireList">Voltaire Upgrade</option>
+			<option value="maryList">Mary Upgrade</option>
+			<option value="vasilList">Vasil Upgrade</option>
+		</select>
+	</span>
+	
+    <div class="dashboard">
+		<span class="btnStart"> Start Game</span><br>
+        <span class="kmBoard"><span class="speedDash"></span>/km/hr | Score :<span class="scoreDash"></span> | <span class="lifeDash"></span></span>
+    </div></div>
+    <div id="container">
+	    
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
